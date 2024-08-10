@@ -1,0 +1,47 @@
+O QUE É O DOM?
+Document Object Model ou Modelo de Objetos de Documento.
+
+Permite que a gente manipule o HTML
+
+Para acessar qualquer função DOM, no JavaScript, é usado o objeto 'document'
+
+Basicamente o DOM transforma o conteúdo escrito em linguagens de marcação como HTML e XML em uma árvore de objetos para que linguagens de script possam se comunicar mais efetivamente.
+
+DOM (Document Object Mode) é fundamental para a criação de páginas web dinâmicas e interativas, permitindo que os desenvolvedores interajam com o conteúdo da página e a sua estrutura em tempo real.
+
+Resumo do Papel do DOM:
+Transformação de Marcação em Estrutura de Objetos: O DOM converte o conteúdo de documentos HTML ou XML em uma estrutura hierárquica de objetos. Cada elemento, atributo e texto do documento é representado como um nó na árvore DOM. Por exemplo, um documento HTML é representado como uma árvore onde o <html> é o nó raiz, e seus filhos são <head>, <body>, e assim por diante.
+
+Interface para Manipulação: O DOM fornece uma API que permite que linguagens de script acessem e manipulem essa árvore de objetos. Com essa API, você pode modificar a estrutura, o estilo e o conteúdo do documento de forma programática.
+
+Comunicação entre Conteúdo e Scripts: Linguagens de script, como JavaScript, usam o DOM para interagir com o conteúdo da página. Isso inclui:
+
+Selecionar elementos: Encontrar elementos HTML específicos na página (por exemplo, document.getElementById('id')).
+Modificar o conteúdo: Alterar o texto ou o HTML de elementos (por exemplo, element.innerText = 'Novo texto').
+Alterar atributos: Mudar atributos dos elementos (por exemplo, element.setAttribute('src', 'nova-imagem.jpg')).
+Adicionar ou remover elementos: Inserir novos elementos na árvore ou remover existentes (por exemplo, parentNode.appendChild(novoElemento)).
+
+
+https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction
+
+O Document Object Model (DOM) oferece uma série de funcionalidades que são fundamentais para a manipulação e interação com documentos HTML e XML. Aqui estão algumas das principais funcionalidades e benefícios do uso do DOM:
+
+Manipulação Dinâmica do Conteúdo: Você pode adicionar, remover e modificar elementos e atributos no documento HTML de forma dinâmica, sem precisar recarregar a página. Isso permite criar interfaces de usuário interativas e atualizações em tempo real.
+
+Acesso a Elementos e Atributos: O DOM permite acessar e modificar os elementos e atributos do documento de forma programática. Por exemplo, você pode alterar o texto de um parágrafo, mudar o valor de um campo de entrada ou ajustar estilos diretamente via JavaScript.
+
+Eventos e Interatividade: O DOM permite a criação e manipulação de eventos, como cliques, movimentos do mouse e teclado. Isso possibilita adicionar interatividade às páginas web, respondendo às ações do usuário de maneira eficiente.
+
+Navegação Hierárquica: Com o DOM, você pode navegar pela estrutura hierárquica de um documento, acessando pais, filhos e irmãos dos elementos. Isso facilita a localização de elementos e a compreensão da estrutura do documento.
+
+Criação e Inserção de Novos Elementos: Você pode criar novos elementos e inseri-los em qualquer parte do documento, permitindo a construção dinâmica de conteúdo e a modificação da estrutura da página conforme necessário.
+
+Manipulação de Estilos: Através do DOM, é possível alterar dinamicamente as propriedades de estilo dos elementos, como cores, fontes e tamanhos, possibilitando ajustes visuais em resposta a ações do usuário ou outras condições.
+
+Modificação de Classes e Identificadores: Você pode adicionar, remover ou alterar classes e identificadores de elementos, o que é útil para aplicar diferentes estilos e comportamentos dependendo das necessidades da aplicação.
+
+Acesso a Dados: É possível acessar e manipular dados armazenados em atributos de elementos, como valores de campos de formulário, o que é essencial para o processamento e validação de dados do usuário.
+
+Suporte a APIs e Bibliotecas: Muitas bibliotecas e frameworks JavaScript, como jQuery e React, utilizam o DOM para oferecer funcionalidades avançadas e simplificar a manipulação de documentos, facilitando o desenvolvimento.
+
+Compatibilidade e Padrões: O DOM segue padrões estabelecidos pelo W3C, garantindo que o código seja compatível com diversos navegadores e plataformas. Isso ajuda a manter a consistência na forma como o conteúdo é manipulado e exibido.

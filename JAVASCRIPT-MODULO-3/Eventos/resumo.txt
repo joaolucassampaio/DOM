@@ -1,0 +1,29 @@
+    O que são eventos?
+
+# Eventos são códigos JS acionados SOMENTE com base em resposta as ações do usuário na página.
+# São uma forma dinâmica de executar um código JAVASCRIPT dentro de uma página HTML.
+
+# São acionados por ações específicas na página (clicar, passar o mouse, focar, digitar, etc).
+
+# Permite executar o carregamento do JAVASCRIPT sem travar o carregamento da página. 
+Um exemplo de uso de código JS que trava o carregamento é o uso do alert().
+
+    Como são usados?
+# São passados como atributos nas tags HTML, geralmente iniciados com "on". Que, traduzido, significa "em".
+# Dentro do atributo, é passado o código JS a ser executado.
+
+Por exemplo:
+
+<div>
+    <label for="onMouseEnter">Entrada do Mouse:</label>
+    <input type="text" id="onMouseEnter" onmouseenter="onMouseEnter()">
+</div>
+
+<div>
+    <label for="onChange">Mudança de Valor:</label>
+    <input type="text" id="onChange" onchange="console.log('mudança no valor')">
+</div>
+
+# Lembre-se que é sempre aconselhável escrever o código JAVASCRIPT em um arquivo separado e usar a tag <script> para para passar o caminho do arquivo. Dessa forma, o arquivo carrega junto com a página HTML.
+
+# Sugestão: buscar documentação do JS para conhecer todos os eventos.
