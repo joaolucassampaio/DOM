@@ -44,7 +44,7 @@ function criarFormulario() {
 }
 
 function escalarJogador(){
-    const nome = document.getElementById('nome').value
+    const nome = document.getElementById('nome').value //pega o valor do elemento com id nome
     const posicao = document.getElementById('pos').value
     const numero = document.getElementById('num').value
 
@@ -96,19 +96,19 @@ function escalarJogador(){
 function removerJogador() {
     const jogadorARemover = prompt('Qual é o número da camisa do jogador que deseja remover da escalação do time?')
 
-    if(Number.isInteger(Number(jogadorARemover))){
-        const listaJogadores = document.querySelectorAll('#lista-jogadores')
+    if(Number.isInteger(Number(jogadorARemover))){ //transforma o input de jogadorARemover para um número e depois verifica se é int
+        const listaJogadores = document.querySelectorAll('#lista-jogadores') //querySelectorAll pega todos os filhos de um nó e os armazenam em um nodelist (semelhante a um array)
         //console.log(listaJogadores)
 
-        for(let i = 0; i < listaJogadores.length; i++) {
-            const numeroCamisa = listaJogadores[i].querySelector('#num-jogador').innerText
+        for(let i = 0; i < listaJogadores.length; i++) { // itera sobre o array listaJogadores
+            const numeroCamisa = listaJogadores[i].querySelector('#num-jogador').innerText // seleciona o número da camisa do jogador da iteração da vez
 
-            if(numeroCamisa === jogadorARemover) {
+            if(numeroCamisa === jogadorARemover) { // verifica se o n° da camisa do jogador da iteração da vez é igual ao número recebido pelo prompt
                 confirmacao = confirm(
-                    "Você confirma a remoção do jogador " + listaJogadores[i].querySelector('#nome-jogador').innerText + "?"
+                    "Você confirma a remoção do jogador " + listaJogadores[i].querySelector('#nome-jogador').innerText + "?" //seleciona o texto do elemento declarado pelo id nome-jogador
                 )
                 if(confirmacao) {
-                    listaJogadores[i].remove()
+                    listaJogadores[i].remove() // remove o nó
                     alert('Jogador removido com sucesso!')
                 }
             }
@@ -124,12 +124,12 @@ function criarBotoes() {
     const botao_escalar = document.createElement('button')
         botao_escalar.innerText = 'Escalar'
         botao_escalar.type = 'button'
-        botao_escalar.addEventListener("click", escalarJogador)
+        botao_escalar.addEventListener("click", escalarJogador) // ao ser clicado puxa a função escalarJogador
 
     const botao_remover = document.createElement('button')
         botao_remover.innerText = 'Remover'
         botao_remover.type = 'button'
-        botao_remover.addEventListener("click", removerJogador)
+        botao_remover.addEventListener("click", removerJogador) // ao ser clicado puxa a função removerJogador
 
     return [botao_escalar, botao_remover] //retorna um array contendo os botões
 }
@@ -144,7 +144,7 @@ function gerenciaEscala(botao_gerenciaEscala){
     formulario.append(...botoes) //(...) 'spread': sintaxe para passar os elementos do array como argumentos individuais
     div1.appendChild(formulario)
 
-    botao_gerenciaEscala.disabled = true //desativa o botão 'Gerenciar Escala' após ser usado
+    botao_gerenciaEscala.disabled = true //desativa o botão 'Gerenciar Escala' após ser usado, foi passado como parâmetro
 }
 
 /* createElement sintaxe

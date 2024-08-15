@@ -45,3 +45,24 @@ Acesso a Dados: É possível acessar e manipular dados armazenados em atributos 
 Suporte a APIs e Bibliotecas: Muitas bibliotecas e frameworks JavaScript, como jQuery e React, utilizam o DOM para oferecer funcionalidades avançadas e simplificar a manipulação de documentos, facilitando o desenvolvimento.
 
 Compatibilidade e Padrões: O DOM segue padrões estabelecidos pelo W3C, garantindo que o código seja compatível com diversos navegadores e plataformas. Isso ajuda a manter a consistência na forma como o conteúdo é manipulado e exibido.
+
+/////////////////////////////////////////RESUMO AQUI///////////////////////////////
+Basicamente, o DOM transforma todo o conteúdo HTML (tags etc) em OBJETOS.
+Ele faz isso para que linguagens de SCRIPT como o JavaScript possam se comunicar com linguagens de marcação como HTML.
+Objeto é uma estrutura que pode conter dados e funcionalidades. Dados são armazenados em propriedades e funcionalidades são representadas por métodos.
+
+Propriedade: valor associado a um objeto
+    Acessam e modificam valores diretamente associados a elementos DOM.
+
+Método: função asssociada a um objeto
+    Realizam ações sobre elementos DOM e manipulam a estrutura do documento.
+
+Exemplos de propriedades DOM: 
+id, className, innerText, children
+
+Pq children é propriedade? Pq ele retorna uma coleção ao vivo dos elementos filhos diretos
+
+Exemplos de métodos DOM: 
+getElementById(id), querySelector(selector), appendChild(child), addEventListener(type, listener)
+
+'document' é um objeto que representa o documento HTML carregado na página.

@@ -1,0 +1,6 @@
+"Uncaught TypeError: Cannot read properties of null (reading 'addEventListener')
+    at index.js:22:10"
+
+- O erro acima é causado pelo carregamento do JS antes do HTML
+- Para evitar, basta incluir 'defer' se a tag script do código externo estiver no head
+- Ou incluir a tag script no final do código da tag body

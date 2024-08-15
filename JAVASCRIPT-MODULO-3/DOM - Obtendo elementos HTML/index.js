@@ -26,6 +26,9 @@ function show() {
     const contacts = document.querySelectorAll("#contact-list > li > label") // '>' significa "dentro"
     console.log(contacts)                                                    // dentro disso aqui > isso aqui
                                                                             // ou seja, pega as label dentro de li e contact-list
+    // (. para class e # para id's)
+    //  const contacts = document.querySelectorAll(".contact-list > li > label")
+
 
     // Obter um elemento a partir de uma query (o primeiro elemento a corresponder)
     /* O comportamento é igual ao do querySelectorAll(), porém selecionando o primeiro elemento que corresponder à query:
